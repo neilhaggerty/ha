@@ -1,0 +1,7 @@
+# configuration.yaml
+---
+default_config: 
+
+http:                         
+  use_x_forwarded_for: true 
+  trusted_proxies: 10.42.1.25
