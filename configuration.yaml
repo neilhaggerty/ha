@@ -19,7 +19,7 @@ http: !include http.yaml
 ################################################################################
 # binary_sensor: !include_dir_merge_list integrations/binary_sensors/
 # group: !include_dir_named integrations/groups/
-# spotify: !include integrations/spotify.yaml
-spotify:
-  client_id: !env_var SPOTIFY_CLIENT_ID
-  client_secret: !env_var SPOTIFY_CLIENT_SECRET
+spotify: !include integrations/spotify.yaml
+# spotify:
+#   client_id: !env_var SPOTIFY_CLIENT_ID
+#   client_secret: !env_var SPOTIFY_CLIENT_SECRET
