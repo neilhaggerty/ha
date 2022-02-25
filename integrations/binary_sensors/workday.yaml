@@ -1,0 +1,6 @@
+# workday
+---
+- platform: workday
+  country: US
+  workdays: [mon, tue, wed, thu, fri]
+  excludes: [sat, sun, holiday]

@@ -1,7 +1,22 @@
 # configuration.yaml
 ---
-default_config: 
+################################################################################
+# Home Assistant Main
+################################################################################
 
-http:                         
-  use_x_forwarded_for: true 
-  trusted_proxies: 10.42.1.25
+################################################################################
+# Home Assistant Components
+################################################################################
+default_config:
+http: !include http.yaml
+
+################################################################################
+# Home Assistant Integrations
+# Installed integrations are listed below:
+#
+#   https://www.home-assistant.io/integrations                                    
+#
+################################################################################
+# binary_sensor: !include_dir_merge_list integrations/binary_sensors/
+# group: !include_dir_named integrations/groups/
+# !include_dir_named packages
